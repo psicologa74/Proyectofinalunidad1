@@ -1,0 +1,164 @@
+/* Estilo general del cuerpo */
+body {
+    background: #5433FF;  /* Fallback para navegadores antiguos */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Estilo para los títulos y subtítulos */
+h1, h2 
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+h3, h4 
+{
+    font-family:"Pacifico",cursive;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-family:"Pacifico", cursive;
+    color: #0b3517;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+}
+
+/* Barra de navegación */
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+header .navbar {
+    font-family: "Pacifico";
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #62d3c6;
+}
+.navbar-brand, .nav-link {
+    color: rgb(20, 17, 17) !important;
+}
+.nav-link:hover {
+    color: #333 !important;
+}
+.navbar-toggler-icon {
+    color: rgb(199, 185, 53);
+}
+
+/* Sección del Carousel */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Estilos para imágenes */
+.img-fluid {
+    border-radius: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+.img-fluid:hover {
+    transform: scale(1.1); /* Aumenta la imagen al pasar el mouse */
+}
+
+/* Sección de texto e imagen */
+section h2 {
+    font-family:"Pacifico", cursive;;
+    font-size: 5rem;
+    color: #090809;
+    margin-bottom: 20px;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 196, 138);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.btn-primary {
+    background-color: #5cb85c;
+    padding: 10px 20px;
+}
+.btn-primary:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos del footer */
+.footer {
+    font-family: "Pacifico";
+    font-size: 2rem;
+    background-color: #a5ea9c;
+    color: rgb(16, 16, 20);
+    padding: 30px 0;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul {
+    font-family: "Pacifico";
+    font-size: 2rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer ul li a {
+    color: rgb(22, 21, 23);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.footer ul li a:hover {
+    text-decoration:palevioletred;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
